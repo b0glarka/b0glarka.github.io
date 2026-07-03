@@ -129,6 +129,26 @@
       <h2>Projects</h2>
 
       <article class="card">
+        <p class="tags"><span class="tag primary">RAG</span><span class="tag">LLM Evaluation</span><span class="tag">Python</span></p>
+        <h3>RegRAG-AML &mdash; Grounded Q&amp;A over FATF Anti-Money-Laundering Rules</h3>
+        <p class="card-meta">Deployed RAG + evaluation &middot; Chroma &middot; sentence-transformers &middot; Llama 3.3 70B &middot; LLM-judge faithfulness</p>
+        <p>
+          A deployed retrieval-augmented question-answering assistant over the FATF AML/CFT
+          Recommendations. It answers only from the source text with inline page citations, abstains
+          when a question is out of scope, treats retrieved text as data rather than instructions, and
+          reports measured retrieval and answer-faithfulness metrics against a hand-built gold set.
+          Reuses the prompt-injection and LLM-judge evaluation methodology from my MS capstone.
+        </p>
+        <div class="card-foot">
+          <span class="metrics">0.97 retrieval recall@8 &middot; 0.83 answer faithfulness &middot; zero hallucinations on the answerable set</span>
+          <span class="links">
+            <a class="btn" href="https://regrag-aml.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+            <a class="btn ghost" href="https://github.com/b0glarka/regrag-aml" target="_blank" rel="noopener">GitHub</a>
+          </span>
+        </div>
+      </article>
+
+      <article class="card">
         <p class="tags"><span class="tag primary">AI Security</span><span class="tag">NLP</span><span class="tag">Python</span></p>
         <h3>Hardening AI Agents Against Prompt Injection &mdash; MS Capstone</h3>
         <p class="card-meta">MS Capstone &middot; CEU &middot; sponsored by Hiflylabs &middot; HuggingFace &middot; LoRA/PEFT</p>
